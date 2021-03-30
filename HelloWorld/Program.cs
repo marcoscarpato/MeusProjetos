@@ -14,14 +14,29 @@ static class Program
         Console.WriteLine(isIdadeValida
             ? "Você pode comprar bebida alcoolica"
             : "Você não pode comprar bebida alcoolica");
+        Console.ReadKey();
+        
     }
 
     private static bool VerificaIdade(string anoNascimento)
     {
-        var valorConvertido = int.Parse(anoNascimento);
-        var resultado = anoAtual - valorConvertido;
+        try
+        {
+            var valorConvertido = int.Parse(anoNascimento);
+            var resultado = anoAtual - valorConvertido;
+            
+            return idadeMinima <= resultado;
 
-        return idadeMinima <= resultado;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("Porfavor, digite apenas numeros");
+            Console.WriteLine("Qual ano você nasceu?");
+            var resposta = Console.ReadLine();
+            return VerificaIdade(resposta);
+
+        }
+        
         
     }
 
