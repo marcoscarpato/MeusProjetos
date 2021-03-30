@@ -11,19 +11,18 @@ static class Program
         var anoNascimento = Console.ReadLine();
         var isIdadeValida = VerificaIdade(anoNascimento);
 
-        if (isIdadeValida)
-        {
-            Console.WriteLine("Você pode comprar bebida alcoolica");
-        }
-        else
-        {
-            Console.WriteLine("Você não pode comprar bebida alcoolica");
-        }
+        Console.WriteLine(isIdadeValida
+            ? "Você pode comprar bebida alcoolica"
+            : "Você não pode comprar bebida alcoolica");
     }
 
     private static bool VerificaIdade(string anoNascimento)
     {
-        return false;
+        var valorConvertido = int.Parse(anoNascimento);
+        var resultado = anoAtual - valorConvertido;
+
+        return idadeMinima <= resultado;
+        
     }
 
 }
