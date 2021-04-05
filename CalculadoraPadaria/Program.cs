@@ -9,8 +9,7 @@ namespace CalculadoraPadaria
 
  static class Program
 {
-    private const float pesoPao = 0.25f;
-    private const float preçoPao = 5.00f;
+    
     private const float valorPao = 0.125f;
 
 
