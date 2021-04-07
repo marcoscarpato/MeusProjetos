@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contador", "Contador\Contad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraPadaria", "CalculadoraPadaria\CalculadoraPadaria.csproj", "{A30AEA44-4F9D-4369-BF62-F797370F2772}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex", "Pokedex\Pokedex.csproj", "{1C8BF22F-6CD7-4863-BA68-7BD7C95DD7CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A30AEA44-4F9D-4369-BF62-F797370F2772}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A30AEA44-4F9D-4369-BF62-F797370F2772}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A30AEA44-4F9D-4369-BF62-F797370F2772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8BF22F-6CD7-4863-BA68-7BD7C95DD7CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8BF22F-6CD7-4863-BA68-7BD7C95DD7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8BF22F-6CD7-4863-BA68-7BD7C95DD7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8BF22F-6CD7-4863-BA68-7BD7C95DD7CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
